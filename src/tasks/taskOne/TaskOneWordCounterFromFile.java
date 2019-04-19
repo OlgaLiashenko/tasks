@@ -17,7 +17,7 @@ public class TaskOneWordCounterFromFile {
         if (args.length > 0) {
             filename = args[0];
         } else {
-            filename = "test.txt";
+            filename = "testFile.txt";
         }
         TaskOneWordCounterFromFileFunction wordCounter = new TaskOneWordCounterFromFileFunction();
         try (BufferedReader reader = Files.newBufferedReader(Paths.get(filename))) {
